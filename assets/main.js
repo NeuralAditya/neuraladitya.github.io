@@ -1,3 +1,37 @@
+const bootText = document.getElementById("bootText");
+const bootScreen = document.getElementById("bootScreen");
+
+const bootSequence = [
+  "initializing neural system...",
+  "loading core modules...",
+  "establishing secure connection...",
+  "decrypting UI layers...",
+  "injecting portfolio runtime...",
+  "system ready ✔",
+  "welcome, Aditya"
+];
+
+let i = 0;
+
+function typeBootLine() {
+  if (i < bootSequence.length) {
+    bootText.innerHTML += bootSequence[i] + "\n";
+    i++;
+    setTimeout(typeBootLine, 700);
+  } else {
+    setTimeout(() => {
+      bootScreen.style.opacity = "0";
+      bootScreen.style.transition = "1s ease";
+      setTimeout(() => {
+        bootScreen.style.display = "none";
+      }, 1000);
+    }, 800);
+  }
+}
+
+window.addEventListener("load", () => {
+  typeBootLine();
+});
 const terminal = document.getElementById("terminal");
 const cmd = document.getElementById("cmd");
 const output = document.getElementById("output");
