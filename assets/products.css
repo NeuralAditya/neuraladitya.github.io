@@ -1,5 +1,52 @@
-.card:hover {
-  border-color: #06b6d4;
-  transform: scale(1.02);
+.product img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product {
+  cursor: pointer;
   transition: 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  border-color: #06b6d4;
+}
+
+/* MODAL WRAPPER */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* MODAL BOX */
+.modal-content {
+  background: #0b1020;
+  padding: 30px;
+  width: 500px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+}
+
+/* CLOSE BUTTON */
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.hidden {
+  display: none;
 }
