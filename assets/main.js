@@ -2,52 +2,33 @@ const terminal = document.getElementById("terminal");
 const cmd = document.getElementById("cmd");
 const output = document.getElementById("output");
 
-// Toggle terminal with `
+// toggle terminal with `
 document.addEventListener("keydown", (e) => {
-  if (e.key === "t") {
+  if (e.key === "`") {
     terminal.classList.toggle("hidden");
     cmd.focus();
   }
 });
 
-function print(text) {
+function log(text) {
   output.innerHTML += "<br>> " + text;
-  output.scrollTop = output.scrollHeight;
 }
 
 cmd.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
-    const value = cmd.value.trim().toLowerCase();
+    const v = cmd.value.toLowerCase();
+    log(v);
 
-    print(value);
-
-    if (value === "help") {
-      print("commands: open home, open projects, open skills, open products, contact");
+    if (v === "help") {
+      log("open home | open projects | open skills | open products | contact");
     }
 
-    else if (value === "open home") {
-      window.location.href = "index.html";
-    }
-
-    else if (value === "open projects") {
-      window.location.href = "projects.html";
-    }
-
-    else if (value === "open skills") {
-      window.location.href = "skills.html";
-    }
-
-    else if (value === "open products") {
-      window.location.href = "products.html";
-    }
-
-    else if (value === "contact") {
-      window.location.href = "contact.html";
-    }
-
-    else {
-      print("unknown command");
-    }
+    else if (v === "open home") location.href = "index.html";
+    else if (v === "open projects") location.href = "projects.html";
+    else if (v === "open skills") location.href = "skills.html";
+    else if (v === "open products") location.href = "products.html";
+    else if (v === "contact") location.href = "contact.html";
+    else log("unknown command");
 
     cmd.value = "";
   }
