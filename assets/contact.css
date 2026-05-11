@@ -1,4 +1,94 @@
+/* =========================
+   CONTACT PAGE - NEURAL UI
+   ========================= */
+
+/* PAGE TITLE */
 h2 {
   color: #06b6d4;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* CONTACT WRAPPER */
+.contact-wrapper {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* FORM FIELDS */
+.contact-wrapper input,
+.contact-wrapper textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.4);
+  color: #e5e7eb;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* FOCUS EFFECT */
+.contact-wrapper input:focus,
+.contact-wrapper textarea:focus {
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 2px rgba(6,182,212,0.2);
+}
+
+/* TEXTAREA HEIGHT */
+.contact-wrapper textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+/* LABELS */
+.contact-wrapper label {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* BUTTON */
+.contact-wrapper button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+/* BUTTON HOVER */
+.contact-wrapper button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(124,58,237,0.3);
+}
+
+/* CONTACT INFO BOX */
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* GLASS CARD EFFECT */
+.glass {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
 }
