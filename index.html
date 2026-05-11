@@ -2,17 +2,11 @@
 <html>
 <head>
   <title>NeuralAditya</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/home.css">
 </head>
 
 <body>
-  <div id="terminal" class="terminal hidden">
-  <div class="terminal-header">
-    NeuralAditya Terminal v1.0
-  </div>
-
-  <input id="cmd" class="input" placeholder="enter command..." />
-</div>
 
 <nav>
   <div><b>NeuralAditya</b></div>
@@ -27,12 +21,19 @@
 
 <section class="hero">
   <div>
-    <h1>Hi, I'm <span class="gradient">Aditya</span></h1>
-    <p>Developer • AI Builder • System Creator</p>
+    <h1>Hi, I'm <span>Aditya</span></h1>
+    <p class="tagline">Developer • AI Builder • System Designer</p>
   </div>
 </section>
 
-<footer>© 2026 NeuralAditya</footer>
+<!-- Terminal -->
+<div id="terminal" class="terminal hidden">
+  <div>Neural Terminal</div>
+  <div id="output">> system ready</div>
+  <input id="cmd" placeholder="type command..." />
+</div>
+
+<script src="assets/main.js"></script>
 
 </body>
 </html>
