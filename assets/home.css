@@ -1,18 +1,64 @@
 .hero {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 0 8%;
 }
 
+.hero-content {
+  max-width: 800px;
+}
+
+/* SYSTEM STATUS */
+.status {
+  color: #06b6d4;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* MAIN TEXT */
 .hero h1 {
   font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.glow {
   background: linear-gradient(90deg,#7c3aed,#06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.tagline {
-  color: #a7b0c0;
+/* SUBTITLE */
+.subtitle {
+  color: #9ca3af;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* CTA */
+.cta {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.primary {
+  background: linear-gradient(90deg,#7c3aed,#06b6d4);
+  color: white;
+}
+
+.secondary {
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
 }
