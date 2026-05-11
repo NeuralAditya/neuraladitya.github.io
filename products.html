@@ -1,35 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Products</title>
-  <link rel="stylesheet" href="assets/base.css">
-  <link rel="stylesheet" href="assets/products.css">
-  <link rel="stylesheet" href="assets/terminal.css">
-</head>
-
-<body>
-
-<nav>
-  <div><b>NeuralAditya</b></div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="skills.html">Skills</a></li>
-    <li><a href="products.html">Products</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
 <section class="section">
   <h2>Products</h2>
 
   <div class="grid">
-    <div class="card">AI Founder OS</div>
-    <div class="card">Trading AI Engine</div>
+
+    <div class="card product" onclick="openProduct('ai')">
+      <img src="assets/images/ai-os.png" />
+      <h3>AI Founder OS</h3>
+      <p>Startup automation system for indie hackers.</p>
+    </div>
+
+    <div class="card product" onclick="openProduct('trade')">
+      <img src="assets/images/trade-ai.png" />
+      <h3>Trading AI Engine</h3>
+      <p>ML-based market prediction system.</p>
+    </div>
+
   </div>
 </section>
 
-<script src="assets/main.js"></script>
+<!-- PRODUCT MODAL WRAPPER -->
+<div id="productModal" class="modal hidden">
+  <div class="modal-content">
 
-</body>
-</html>
+    <span class="close" onclick="closeProduct()">&times;</span>
+
+    <div id="productDetails"></div>
+
+  </div>
+</div>
