@@ -53,3 +53,11 @@ nav a:hover {
   padding: 20px;
   border-radius: 14px;
 }
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #a7b0c0;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 80px;
+}
