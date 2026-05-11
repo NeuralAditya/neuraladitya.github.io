@@ -1,4 +1,20 @@
-.product img {
+/* PAGE BACKGROUND */
+body {
+  background: radial-gradient(circle at top, #0b1020, #050816 60%);
+  color: white;
+}
+
+/* SUBTLE GLOW LAYERS */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(124,58,237,0.15), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(6,182,212,0.12), transparent 40%);
+  z-index: -1;
+  pointer-events: none;
+}.product img {
   width: 100%;
   height: 160px;
   object-fit: cover;
