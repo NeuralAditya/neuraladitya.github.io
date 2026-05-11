@@ -33,3 +33,37 @@ cmd.addEventListener("keydown", (e) => {
     cmd.value = "";
   }
 });
+function openProduct(type) {
+  const modal = document.getElementById("productModal");
+  const details = document.getElementById("productDetails");
+
+  modal.classList.remove("hidden");
+
+  if (type === "ai") {
+    details.innerHTML = `
+      <h2>AI Founder OS</h2>
+      <p>Complete automation system for founders.</p>
+      <ul>
+        <li>Idea validation engine</li>
+        <li>AI prompt workflows</li>
+        <li>Startup automation tools</li>
+      </ul>
+    `;
+  }
+
+  if (type === "trade") {
+    details.innerHTML = `
+      <h2>Trading AI Engine</h2>
+      <p>Machine learning based market prediction system.</p>
+      <ul>
+        <li>Time series analysis</li>
+        <li>ML prediction models</li>
+        <li>Risk analysis system</li>
+      </ul>
+    `;
+  }
+}
+
+function closeProduct() {
+  document.getElementById("productModal").classList.add("hidden");
+}
