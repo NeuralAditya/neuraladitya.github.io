@@ -1,0 +1,10 @@
+h2 {
+  margin-bottom: 30px;
+  color: #06b6d4;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  transition: 0.3s;
+  border-color: #7c3aed;
+}
