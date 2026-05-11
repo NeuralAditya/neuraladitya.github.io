@@ -1,0 +1,5 @@
+.card:hover {
+  border-color: #06b6d4;
+  transform: scale(1.02);
+  transition: 0.3s;
+}
